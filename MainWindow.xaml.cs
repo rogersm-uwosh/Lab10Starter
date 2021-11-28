@@ -38,15 +38,8 @@ namespace Lab10Starter
         {
             InitializeComponent();
             ticTacToe = new TicTacToeGame();
-            LoadGrid();
+            grid = new Button[TicTacToeGame.GRID_SIZE, TicTacToeGame.GRID_SIZE] { { Tile00, Tile01, Tile02 }, { Tile10, Tile11, Tile12 }, { Tile20, Tile21, Tile22 } };
         }
-
-        private void LoadGrid()
-        {
-            grid = new Button[TicTacToeGame.GRID_SIZE, TicTacToeGame.GRID_SIZE]{ {Tile00, Tile01, Tile02 }, {Tile10, Tile11, Tile12 }, {Tile20, Tile21, Tile22} };
-        }
-
-
 
         /// <summary>
         /// Handles button clicks - changes the button to an X or O (depending on whose turn it is)
@@ -89,6 +82,9 @@ namespace Lab10Starter
             ResetGame();
         }
 
+        /// <summary>
+        /// Resets the grid buttons so their content is all ""
+        /// </summary>
         private void ResetGame()
         {
             ticTacToe.ResetGame();

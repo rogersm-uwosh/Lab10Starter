@@ -33,7 +33,6 @@ namespace Lab10Starter
         /// </summary>
         public TicTacToeGame()
         {
-
             ResetGame();
         }
 
@@ -65,8 +64,8 @@ namespace Lab10Starter
         }
 
         /// <summary>
-        /// Returns Player.X or .O if there is a winner, Player.Nobody if nobody's won, Player.Both if there's a tie
-        /// This method is too long and should be factored out
+        /// Returns Player.X or Player.O if there is a winner, Player.Nobody if nobody's won, Player.Both if there's a tie
+        /// This method is too long and should be refactored
         /// </summary>
         /// <returns></returns>
         public Player IsThereAWinner()
